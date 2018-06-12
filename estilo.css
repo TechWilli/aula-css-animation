@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+}
+
+
+.queijo{
+   margin-left: 800px;
+   
+
+}
+
+.ratoeira{
+
+}
+
+.rato{
+    
+    /*transition:.5s;*/
+    animation: mudarcor, mover, descersubir;
+    animation-duration: 5s;
+    
+}
+
+/*img:hover{
+    box-shadow: 10px 10px 30px blue;
+    filter: grayscale(100%) blur(2px);
+    transform: rotate(36000deg) scale(3);
+}*/
+
+@keyframes mover{
+    from{
+    transform: translateX(0px);
+}
+
+    to{
+    transform: translateX(100px);
+}
+
+}
+
+/*@keyframes mudarcor {
+    from{
+        filter: grayscale(0%);
+    }
+
+    to{
+        filter: grayscale(100%);
+    }
+
+}*/
+
+@keyframes descersubir {
+    0%{
+        transform: translateX(0) translateY(0)
+    }
+
+    20%{
+        transform: translateX(700px) translateY(0);
+    }
+
+    80%{
+        transform: translateX(100px) translateY(180px);
+    }
+
+    100%{
+        transform: translateX(700px) translateY(180px);
+    }
+}
